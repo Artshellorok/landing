@@ -164,15 +164,15 @@ body{
 }
 .main__text >a{
     color: #fff;
-    font-size: 1.9vh;
+    font-size: 1.8vh;
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     margin-top: 20px;
     display: inline-block;
     font-weight: 500;
     padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 2vh;
+    padding-right: 2vh;
     background: #a91606;
     transition: 0.5s;
 }
@@ -249,10 +249,36 @@ body{
         border: none !important;    
         padding: 0 !important;
     }
+    .main__text >a{
+        padding: 1.5vh;
+        padding-left: 2.5vh;
+        padding-right: 2.5vh;
+    }
 }
+/* FUCK IT */
 @media screen and (max-width: 600px) {
     .main__text{
         width: 100% !important;
+    }
+    .main__text > h1{
+        font-size: 6vh !important;
+    }
+    .main__text > p{
+        font-size: 4vh;
+    }
+    .main__text >a{
+        font-size: 3vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main__text > h1{
+        font-size: 4vh !important;
+    }
+    .main__text > p{
+        font-size: 3vh;
+    }
+    .main__text >a{
+        font-size: 2vh;
     }
 }
 @media screen and (max-height: 500px) {
@@ -263,7 +289,7 @@ body{
         
     }
     .main__text > h1{
-        font-size: 6vh !important;
+        font-size: 5vh !important;
     }
     .main__text > p{
         font-size: 4vh;
