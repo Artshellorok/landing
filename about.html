@@ -6,7 +6,7 @@
     <title>Dabaan</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
 </head>
 <body>
     <div class="header">
@@ -131,35 +131,54 @@
         </div>
     </div>
     <div class="nav aligner">
-        <a href="index.html">
-            Главная
-        </a>
-        <a href="#">
-            Контакты
-        </a>
-        <a href="#">
-            Новости
-        </a>
-        <a href="#">
-            Документы
-        </a>
+            <a href="index.html">
+                Главная
+            </a>
+            <a href="#">
+                Контакты
+            </a>
+            <a href="#">
+                Новости
+            </a>
+            <a href="#">
+                Документы
+            </a>
         <div class="clear"></div>
     </div>
     <div class="main">
-        <div class="wrapper">
-            <div class="main__text">
-                <h1>Logistic natural dispatched</h1>
-                <p>
-                    Logistic natural dispatched
-                </p>
-                <a href="about.html">
-                    Read More
-                </a>
+        <h1>About us</h1>
+        <h2>
+            Company foundation story 
+        </h2>
+        <img src="https://image.made-in-china.com/2f0j00LEtfyIQhVPcs/Porcelain-Recitified-Wood-Tile-Wood-Imitation-200X1000.jpg" height='250px'/>
+        <div class="main__aligner">
+            <p>
+                    Metus hac elementum tristique. Interdum tristique fringilla dis sodales orci laoreet, est facilisis eleifend magnis. Taciti neque montes, magnis. Lorem nunc magna risus ridiculus fringilla dolor blandit aenean diam Gravida lacus mus lectus curae; tempus.
+            </p>
+        </div>
+        
+    </div>
+    <div class="news">
+        <h1>Our company news</h1>
+        <div class="aligner">
+            <hr>
+            <div class="news__block">
+                <img src="https://i.ytimg.com/vi/lXUFeZ75ffo/hqdefault.jpg">
+                <h2>ATTENTION!!! All fortnite gamers! NINJA died of LIGMA. </h2>
+                <p>Hac. Senectus arcu fames blandit leo lobortis vitae donec nisi nunc. Integer gravida vulputate. Mus curabitur cursus proin fringilla auctor phasellus nonummy, condimentum metus nisl Dolor. Tristique ut id nunc. Hendrerit. <a href="#">Read more</a></p>
+                <div class="clear"></div>
+            </div>
+            <hr>
+            <div class="news__block">
+                <img src="https://s3.dexerto.com/thumbnails/_thumbnailLarge/pewdiepie-t-series-live-subscriber-count-subcount-subscribers-real-time-update-million-how-many.jpg">
+                <h2>ATTENTION!!! All 9 yo gamers! Pewdiepie is in great danger and he needs your help! </h2>
+                <p>Hac. Senectus arcu fames blandit leo lobortis vitae donec nisi nunc. Integer gravida vulputate. Mus curabitur cursus proin fringilla auctor phasellus nonummy, condimentum metus nisl Dolor. Tristique ut id nunc. Hendrerit. <a href="#">Read more</a></p>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
     <h1 class="location">Месторасположение</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552407.520530376!2d-107.38538938387141!3d42.01743370410657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875ee23448e12e69%3A0x26b02279d27d382f!2z0JLQsNC50L7QvNC40L3Qsywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1547888612613" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2552407.520530376!2d-107.38538938387141!3d42.01743370410657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875ee23448e12e69%3A0x26b02279d27d382f!2z0JLQsNC50L7QvNC40L3Qsywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1547888612613" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="footer">
         <div class="aligner">
             Copyright &copy; 2019 Dabaan
@@ -167,21 +186,6 @@
     </div>
 </body>
 <script>
-    var maxlocation = 1280 / 1920 * window.innerWidth;
-    console.log(maxlocation / 2);
-    function parallax() {
-        var $slider = document.querySelector(".main");
-        var yPos = window.pageYOffset / 2;
-        yPos = -yPos;
-        console.log(yPos,  maxlocation - (window.innerHeight * 0.75 + 15));
-        if(yPos * -1 < maxlocation - (window.innerHeight * 0.75 + 15)){
-            var coords = "0% "+ yPos + "px";
-            $slider.style.backgroundPosition = coords;
-        }
-    }
-    window.addEventListener("scroll", function() {
-        parallax();	
-    });
     // Mobile js
 
     var mobileButton = document.getElementById("m-button");
