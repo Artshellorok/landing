@@ -108,6 +108,7 @@ body{
 /* Nav */
 
 .nav{
+    max-width: 100%;
     background: #000;
     position:relative;
     top: 25px;
@@ -195,6 +196,22 @@ body{
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
     padding: 30px;
+}
+@media screen and (max-width: 1366px) {
+    .nav > a:hover{
+        background: #000;
+    }
+    .nav > a{
+        padding: 0;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+    .nav{
+        box-sizing: border-box;
+        padding: 20px;
+        padding-top: 0;
+        padding-left: 25px;
+    }
 }
 @media screen and (max-width: 1316px) {
     .header__contacts{
