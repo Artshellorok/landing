@@ -6,7 +6,7 @@
     <title>Dabaan</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="documents.css" />
 </head>
 <body>
     <div class="header">
@@ -146,15 +146,33 @@
         <div class="clear"></div>
     </div>
     <div class="main">
-        <div class="wrapper">
-            <div class="main__text">
-                <h1>Logistic natural dispatched</h1>
-                <p>
-                    Logistic natural dispatched
-                </p>
-                <a href="about.html">
-                    Read More
+        <h1>Документы</h1>
+        <div class="aligner documents">
+            <div class="documents__document">
+                <img src="http://farm6.staticflickr.com/5066/5612317889_9fe170f33f.jpg" width="200px" height="300px">
+                <div>
+                    <p>Сертификат о проведении работ 123</p>
+                </div>
+            </div>
+            <div class="documents__document">
+                <img src="http://farm6.staticflickr.com/5066/5612317889_9fe170f33f.jpg" width="200px" height="300px">
+                <div>
+                    <p>Сертификат о проведении работ 123</p>
+                </div>
+            </div>
+            <div class="documents__document">
+                <img src="http://farm6.staticflickr.com/5066/5612317889_9fe170f33f.jpg" width="200px" height="300px">
+                <div>
+                    <p>Сертификат о проведении работ 123</p>
+                </div>
+            </div>
+            <div class="documents__document">
+                <a href="#">
+                <img src="http://farm6.staticflickr.com/5066/5612317889_9fe170f33f.jpg" width="200px" height="300px">
                 </a>
+                <div>
+                    <p>Сертификат о проведении работ 123</p>
+                </div>
             </div>
         </div>
     </div>
@@ -166,22 +184,8 @@
         </div>
     </div>
 </body>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
-    var maxlocation = 1280 / 1920 * window.innerWidth;
-    console.log(maxlocation / 2);
-    function parallax() {
-        var $slider = document.querySelector(".main");
-        var yPos = window.pageYOffset / 2;
-        yPos = -yPos;
-        console.log(yPos,  maxlocation - (window.innerHeight * 0.75 + 15));
-        if(yPos * -1 < maxlocation - (window.innerHeight * 0.75 + 15)){
-            var coords = "0% "+ yPos + "px";
-            $slider.style.backgroundPosition = coords;
-        }
-    }
-    window.addEventListener("scroll", function() {
-        parallax();	
-    });
     // Mobile js
 
     var mobileButton = document.getElementById("m-button");
