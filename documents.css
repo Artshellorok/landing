@@ -151,7 +151,8 @@ body{
 }
 .documents__document{
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
 }
 .documents__document div{
