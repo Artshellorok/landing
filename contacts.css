@@ -162,6 +162,7 @@ body{
 .contacts__contact > h2{
     font-family: 'Ubuntu';
     font-size: 28px;
+    word-wrap: break-word;
 }
 .contacts__contact > p{
     font-family: 'Ubuntu';
@@ -195,6 +196,7 @@ body{
         margin-left: 5%;
     }
     .contacts__contact{
+	max-width: 95%;
         margin-left: 5%;
     }
 }
