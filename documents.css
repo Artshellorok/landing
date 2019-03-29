@@ -152,7 +152,7 @@ body{
 .documents__document{
     display: inline-block;
     margin-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .documents__document div{
     font-family: 'Ubuntu';
